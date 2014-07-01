@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    tools:context="com.example.demoapp.app.MainActivity">
+    
+    <EditText android:id="@+id/edit_message"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_message"/>
+    
+    <Button
+        android:id="@+id/myButton"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me"
+        android:layout_below="@+id/edit_message"/>
+
+</LinearLayout>
+
+<LinearLayout
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:orientation="horizontal"
+tools:context="com.example.demoapp.app.MainActivity">
+
+<EditText android:id="@+id/edit_name"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:hint="@string/edit_name"/>
+
+<Button
+    android:id="@+id/nameButton"
+    android:textSize="18sp"
+    android:textColor="@color/black"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Click me"
+    android:layout_below="@+id/edit_name"/>
+
+</LinearLayout>
+
+<LinearLayout
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:orientation="horizontal"
+tools:context="com.example.demoapp.app.MainActivity">
+
+<EditText android:id="@+id/edit_email"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:hint="@string/edit_email"/>
+
+<Button
+    android:id="@+id/emailButton"
+    android:textSize="18sp"
+    android:textColor="@color/black"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Click me"
+    android:layout_below="@+id/edit_name"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="horizontal"
+        tools:context="com.example.demoapp.app.MainActivity">
+
+        <EditText android:id="@+id/edit_phone"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_phone"/>
+
+        <Button
+            android:id="@+id/phoneButton"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click me"
+            android:layout_below="@+id/edit_name"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- Use a relative layout for the parent -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AntiqueWhite">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="150dp"
+        android:layout_height="175dp"
+        android:src="@drawable/erinprofile"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"/>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:layout_marginLeft="200dp"
+    android:background="@color/AliceBlue">
+
+
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/red"
+        android:textSize="25dp"
+        android:hint="@string/edit_name"/>
+
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="917-916-5205"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="155 Avenue C
+ New York, NY
+             10009"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp">
+
+    <EditText android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/red"
+        android:hint="erinbesswilliams@gmail.com"/>
+
+    <EditText android:id="@+id/DOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Date of Birth: 05/29/1979"/>
+
+    <EditText android:id="@+id/current_rank"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:hint="Current Rank: Sandan"/>
+
+    <EditText android:id="@+id/current_dues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Monthly Fee: $65"/>
+
+    <EditText android:id="@+id/emergency_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Emergency Contact: Alex Phinn"/>
+
+    <EditText android:id="@+id/emergency_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Emergency Contact #: 201-912-2881"/>
+
+    <EditText android:id="@+id/injury_allergy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Injuries/Allergies: Right knee"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Edit Record"/>
+
+    </LinearLayout>
+
+</FrameLayout>
