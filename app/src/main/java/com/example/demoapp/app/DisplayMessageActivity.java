@@ -18,18 +18,22 @@ public class DisplayMessageActivity extends Activity {
         setContentView(R.layout.new_layout);
 
         if(savedInstanceState == null) {
-            init();
+            mButton();
+
         }
     }
 
-    public void init() {
+    public void mButton() {
         mTextView = (TextView) findViewById(R.id.textview_message);
         getIntent().getStringExtra(MainActivity.EXTRA_MESSAGE);
         mTextView.setText(getIntent().getStringExtra(MainActivity.EXTRA_MESSAGE));
+    }
+
+    public void nButton() {
 
         nTextView = (TextView) findViewById(R.id.textview_name);
-        getIntent().getStringExtra(MainActivity.OTHER_MESSAGE);
-        nTextView.setText(getIntent().getStringExtra(MainActivity.OTHER_MESSAGE));
+        getIntent().getStringExtra(MainActivity.EXTRA_MESSAGE);
+        nTextView.setText(getIntent().getStringExtra(MainActivity.EXTRA_MESSAGE));
 
     }
 
