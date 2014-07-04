@@ -23,9 +23,13 @@ public class DisplayMessageActivity extends Activity {
     }
 
     public void init() {
-        mTextView = (TextView) findViewById(R.id.textview_tv);
+        mTextView = (TextView) findViewById(R.id.textview_message);
         getIntent().getStringExtra(MainActivity.EXTRA_MESSAGE);
         mTextView.setText(getIntent().getStringExtra(MainActivity.EXTRA_MESSAGE));
+
+        nTextView = (TextView) findViewById(R.id.textview_name);
+        getIntent().getStringExtra(MainActivity.OTHER_MESSAGE);
+        nTextView.setText(getIntent().getStringExtra(MainActivity.OTHER_MESSAGE));
 
     }
 

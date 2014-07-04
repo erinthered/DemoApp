@@ -16,6 +16,7 @@ public class MainActivity extends Activity {
 
 
     public final static String EXTRA_MESSAGE = "com.example.DemoApp.MESSAGE";
+    public final static String OTHER_MESSAGE = "OTHER_MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,10 @@ public class MainActivity extends Activity {
     public void init() {
 
         mButton = (Button) findViewById(R.id.myButton);
+        nButton = (Button) findViewById(R.id.nameButton);
+        eButton = (Button) findViewById(R.id.emailButton);
+        pButton = (Button) findViewById(R.id.emailButton);
+
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,6 +45,16 @@ public class MainActivity extends Activity {
 //                String message = editText.getText().toString();
 //                intent.putExtra(EXTRA_MESSAGE, message);
 
+            }
+        });
+
+        nButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DisplayMessageActivity.class);
+                EditText eText = (EditText) findViewById(R.id.edit_name);
+                intent.putExtra(OTHER_MESSAGE, ((EditText) findViewById(R.id.edit_name)).getText().toString());
+                startActivity(intent);
             }
         });
     }
