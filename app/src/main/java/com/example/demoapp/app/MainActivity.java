@@ -16,6 +16,7 @@ public class MainActivity extends Activity {
 
 
     public final static String EXTRA_MESSAGE = "com.example.DemoApp.MESSAGE";
+    public final static String PREF_KEY = "com.example.DemoApp.PREFERENCE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
