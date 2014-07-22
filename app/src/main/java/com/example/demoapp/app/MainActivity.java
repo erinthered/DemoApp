@@ -9,8 +9,12 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Button;
 
+import com.doomonafireball.betterpickers.datepicker.DatePickerDialogFragment;
 
-public class MainActivity extends Activity {
+import org.codechimp.apprater.AppRater;
+
+
+public class MainActivity extends Activity implements DatePickerDialogFragment.DatePickerDialogHandler {
 
     Button mButton, nButton, eButton, pButton;
 
@@ -23,7 +27,11 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         buttonClick();
+        AppRater.showRateDialog(this);
+
     }
+
+
 
     public void buttonClick() {
 
@@ -97,4 +105,8 @@ public class MainActivity extends Activity {
         
     }
 
+    @Override
+    public void onDialogDateSet(int i, int i2, int i3, int i4) {
+
+    }
 }
