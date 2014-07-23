@@ -65,6 +65,16 @@ public class MainActivity extends Activity implements DatePickerDialogFragment.D
                 startActivity(intent);
             }
         });
+
+        eButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ScrollMe.class);
+                EditText editText = (EditText) findViewById(R.id.edit_email);
+                intent.putExtra(EXTRA_MESSAGE, ((EditText) findViewById(R.id.edit_email)).getText().toString());
+                startActivity(intent);
+            }
+        });
     }
 
 
